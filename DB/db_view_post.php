@@ -23,7 +23,7 @@ if (isset($_GET['id'])) //ID 가 들어왔는지 확인
         $row = $result->fetch_assoc();
         echo "<h2>" . $row["title"] . "</h2>"; //제목
         echo "<p>Author: " . $row["author"] . "</p>"; // 저자
-        echo "<p>" . $row["content"] . "</p>"; // 상세정보
+        echo "<p>" . $row["CONTENT"] . "</p>"; // 상세정보
     } else {
         echo "Post not found.";
     }
